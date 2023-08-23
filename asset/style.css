@@ -17,6 +17,11 @@ body{
   display: flex;
 }
 
+a{
+  text-decoration: none;
+  color: white;
+}
+
 .main{
   width: 100%;
   height: calc(100vh - 90px);
@@ -25,15 +30,16 @@ body{
 .play-bar{
   width: 100%;
   height: 90px;
-  background-color: blue;
+  background-color: #282828;
 }
 
 .side{
   position: relative;
   flex-direction: column;
-  width: 225px;
+  width: 200px;
   height: 100%;
-  background-color: cadetblue;
+  background-color: black;
+  color: #6b6b6b;
 }
 
 .strech-side{
@@ -41,7 +47,8 @@ body{
   flex-direction: column;
   height: 100%;
   width: 50px;
-  background-color: cadetblue;
+  background-color: black;
+  color: #6b6b6b;
 
 }
 
@@ -66,19 +73,31 @@ body{
 }
 
 .workflow{
-  width: calc(100% - 225px);
+  width: calc(100% - 200px);
   overflow-y: scroll;
+  background-color: #141922;
 }
+
+/* Top bar */
 
 .bar-fixed{
   position: fixed;
-  z-index: 999;
+  z-index: 10;
   top: 0;
+  justify-content: flex-end;
+  align-items: center;
   background-color: black;
   opacity: 0.3;
-  width: 100%;
+  width: calc(100% - 200px);
   height: 80px;
+  padding-right: 15px;
 }
+
+.btn-upgrade{
+  border: solid 1px white;
+  border-radius: 50px;
+  padding: 10px 20px;
+  }
 
 .left, .right{
   height: 100%;
@@ -93,40 +112,34 @@ body{
 .recently{
   margin-top: 80px;
   flex-wrap: wrap;
+  align-content: center;
 }
 
 .box{
   width: calc(100% / 6);
-  min-width: 100px;
+  max-width: 150px;
+  min-width: 120px;
   aspect-ratio: 1/1;
-  margin: 10px;
+  margin: 15px;
 }
 
 
 @media screen and (max-width: 800px){
-  .debug{
-    background-color: aqua;
-  }
-
   .box{
     width: calc(100% / 4);
     min-width: 100px;
     aspect-ratio: 1/1;
-    margin: 10px;
+    margin: 15px;
   }
   
 }
 
 @media screen and (max-width: 600px){
-  .debug{
-    background-color: rgb(47, 255, 0);
-  }
-
   .box{
-    width: calc(100% / 3);
-    min-width: 100px;
+    width: calc(100% / 2);
+    min-width: 200px;
     aspect-ratio: 1/1;
-    margin: 10px;
+    margin: 15px;
   }
 
   .workflow{
