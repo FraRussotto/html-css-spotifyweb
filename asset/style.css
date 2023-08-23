@@ -22,6 +22,10 @@ a{
   color: white;
 }
 
+ul{
+  list-style-type: none;
+}
+
 .main{
   width: 100%;
   height: calc(100vh - 90px);
@@ -72,7 +76,7 @@ a{
   height: 60px;
 }
 
-.workflow{
+.main-content{
   width: calc(100% - 200px);
   overflow-y: scroll;
   background-color: #141922;
@@ -97,7 +101,89 @@ a{
   border: solid 1px white;
   border-radius: 50px;
   padding: 10px 20px;
-  }
+}
+
+/* main-content */
+.menu{
+  margin-top: 100px;
+  width: 100%;
+}
+
+.menu ul{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  color: #6b6b6b;
+  text-transform: uppercase;
+  font-size: 0.6rem;
+}
+
+.menu ul li{
+  padding: 10px 15px;
+}
+
+h2{
+  color: white;
+  margin-left: 10px;
+  margin-top: 40px;
+}
+
+.container-box{
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.box{
+  width: calc(100% / 6);
+  max-width: 150px;
+  min-width: 120px;
+  aspect-ratio: 1/1;
+  margin: 10px 10px;
+}
+
+.box img{
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: contain;
+}
+
+.circle img{
+  border-radius: 50%;
+}
+
+.text-box{
+  text-align: center;
+}
+
+.text-box p{
+  color: white;
+  font-weight: bold;
+  font-size: 0.8rem;
+  margin-top: 8px;
+}
+
+.subtitle{
+  color: #6b6b6b;
+  font-size: 0.6rem;
+}
+
+.personal .subtitle,
+.popular .subtitle{
+  margin-left: 10px;
+}
+
+.personal p,
+.popular p{
+  text-align: center;
+  margin-top: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+
+/* Play-bar */
 
 .left, .right{
   height: 100%;
@@ -109,22 +195,8 @@ a{
   width: 50%;
 }
 
-.recently{
-  margin-top: 80px;
-  flex-wrap: wrap;
-  align-content: center;
-}
-
-.box{
-  width: calc(100% / 6);
-  max-width: 150px;
-  min-width: 120px;
-  aspect-ratio: 1/1;
-  margin: 15px;
-}
-
-
 @media screen and (max-width: 800px){
+
   .box{
     width: calc(100% / 4);
     min-width: 100px;
@@ -142,7 +214,7 @@ a{
     margin: 15px;
   }
 
-  .workflow{
+  .main-content{
     width: calc(100% - 50px);
   }
 
