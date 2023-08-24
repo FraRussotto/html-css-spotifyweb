@@ -45,17 +45,9 @@ ul{
   min-height: 400px;
   background-color: black;
   color: #6b6b6b;
+  padding-left: 20px;
 }
 
-.strech-side{
-  display: none;
-  flex-direction: column;
-  height: 100%;
-  width: 50px;
-  background-color: black;
-  color: #6b6b6b;
-
-}
 
 .top-side{
   height: calc(100% - 60px);
@@ -63,11 +55,51 @@ ul{
 
 .logo{
   height: 80px;
+  padding: 20px 20px 20px 0;
+}
+
+.logo img{
+  width: 70%;
+  height: auto;
+}
+
+.option ul li i{
+  margin: 10px 0;
+  font-size: 1.5rem;
+}
+
+.option ul li span{
+  margin-left: 10px;
+  font-size: 0.9rem;
 }
 
 .playlist{
   height: calc(100% - 150px);
   overflow: auto;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.top-playlist span:first-child{
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.add-playlist{
+  margin: 10px 0 15px 0;
+  align-items: center;
+  text-transform: capitalize;
+}
+
+.add-playlist i{
+  font-size: 2.5rem;
+  margin-right: 10px;
+}
+
+.playlist ul li{
+  margin-bottom: 15px;
 }
 
 .bottom-side{
@@ -105,6 +137,7 @@ ul{
   width: calc(100% - 225px);
   overflow: auto;
   background-color: #141922;
+  padding-bottom: 40px;
 }
 
 .menu{
@@ -124,17 +157,21 @@ ul{
 
 h2{
   color: white;
-  margin: 30px 0 10px 10px;
+  margin: 40px 0 10px 0;
 }
 
 .container-box{
   flex-wrap: wrap;
 }
 
+section{
+  margin: 0 30px;
+}
+
 .box{
-  width: calc(100% / 6);
+  width: calc(90% / 6);
   min-width: 200px;
-  margin: 30px 10px;
+  margin: 30px 20px 0 0;
 }
 
 .box img{
@@ -160,7 +197,6 @@ h2{
 .subtitle{
   color: #6b6b6b;
   font-size: 0.8rem;
-  margin-left: 10px;
 }
 
 .personal p,
@@ -193,6 +229,7 @@ h2{
 @media screen and (max-width: 600px){
   .box{
     width: calc(90% / 2);
+    min-width: 100px;
   }
 
   .bar-fixed,
