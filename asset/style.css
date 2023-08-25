@@ -63,6 +63,11 @@ ul{
   height: auto;
 }
 
+.logo-small{
+  width: 30px;
+  display: none;
+}
+
 .option ul li i{
   margin: 10px 0;
   font-size: 1.5rem;
@@ -114,25 +119,26 @@ ul{
   height: 80px;
 }
 
-.bottom-side p:first-child{
+.bottom-side div:first-child{
   border-bottom: solid 1px grey;
   padding-bottom: 10px;
+  margin-right: 10px;
   font-size: 0.8rem;
   font-weight: bold;
 }
 
-.bottom-side p:last-child{
+.bottom-side div:last-child{
   padding-top: 10px;
   font-size: 0.9rem;
   font-weight: bold;
   color: white;
 }
 
-.bottom-side p:last-child i{
+.bottom-side div:last-child i{
   font-size: 1.2rem;
 }
 
-.bottom-side p i{
+.bottom-side i{
   margin-right: 10px;
 }
 
@@ -363,5 +369,23 @@ margin-top: 20px;
 
   .side{
     width: 50px;
+  }
+
+  .mobile{
+    display: none;
+  }
+
+  .logo-small{
+    display: block;
+    margin-top: 10px;
+  }
+
+  .bottom-side{
+    text-align: center;
+  }
+
+  .bottom-side div:first-child{
+    margin-right: 0;
+    border-bottom: 0;
   }
 }
