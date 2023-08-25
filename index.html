@@ -22,35 +22,36 @@
         </div>
         <div class="option"> 
           <ul>
-            <li><i class="fa-solid fa-house"></i><span class="mobile">Home</span></li>
-            <li><i class="fa-solid fa-magnifying-glass"></i><span class="mobile">Cerca</span></li>
-            <li><i class="fa-solid fa-book-open"></i><span class="mobile">La tua libreria</span></li>
+            <a href="#"><li class="active"><img src="./asset/img/home.svg" alt=""><span class="mobile">Home</span></li></a>
+            <a href="#"><li><img src="./asset/img/search.svg" alt=""><span class="mobile">Cerca</span></li></a>
+            <a href="#"><li><img src="./asset/img/libreria.svg" alt=""><span class="mobile">La tua libreria</span></li></a>
           </ul>
         </div>
         <div class="playlist mobile">
           <div class="top-playlist">
-            <span>playlist</span>
-            <span class="flex"><i class="fa-sharp fa-solid fa-square-plus"></i>crea playlist</span>
+            <h3>playlist</h3>
+            <a href="#"><span class="flex"><i class="fa-sharp fa-solid fa-square-plus"></i>crea playlist</span></a>
           </div>
           <ul class="name-playlist">
-            <li>nome playlist</li>
-            <li>nome playlist</li>
-            <li>nome playlist</li>
-            <li>nome playlist</li>
-            <li>nome playlist</li>
-            <li>nome playlist</li>
-            <li>nome playlist</li>
+            <a href="#"><li>nome playlist</li></a>
+            <a href="#"><li>nome playlist</li></a>
+            <a href="#"><li>nome playlist</li></a>
+            <a href="#"><li>nome playlist</li></a>
+            <a href="#"><li>nome playlist</li></a>
+            <a href="#"><li>nome playlist</li></a>
+            <a href="#"><li>nome playlist</li></a>
           </ul>
         </div>
       </div>
       <div class="bottom-side">
-        <div>
-          <i class="fa-regular fa-circle-down"></i>
-          <span class="mobile">Installa app</span>
+        <div class="download">
+          <a href="#">
+            <i class="fa-regular fa-circle-down"></i>
+            <span class="mobile">Installa app</span>
+          </a>
         </div>
-        <div>
-          <i class="fa-solid fa-circle-user"></i>
-          <span class="mobile">John Doe</span>
+        <div class="account">
+          <i class="fa-solid fa-circle-user"></i><span class="mobile">John Doe</span>
         </div>
       </div>
     </div>
@@ -158,9 +159,6 @@
     </div>
   </div>
 
-
-
-
   <div class="play-bar flex">
     <div class="left flex">
       <div class="song flex">
@@ -169,12 +167,12 @@
         </div>
         <div class="info-song flex">
           <span>sinister</span>
-          <span>brano nome</span>
+          <a href="#"><span>brano nome</span></a>
         </div>
       </div>
       <div class="song-action">
-        <i class="fa-regular fa-heart"></i>
-        <i class="fa-regular fa-folder"></i>
+        <a href="#"><i class="fa-regular fa-heart"></i></a>
+        <a href="#"><i class="fa-regular fa-folder"></i></a>
       </div>
     </div>
 
@@ -186,9 +184,16 @@
         <i class="fa-solid fa-forward-step"></i>
         <i class="fa-solid fa-rotate-right"></i>
       </div>
-      <div class="timer flex">
+      <div class="advancement flex">
           <span>0:25</span>
-          <div class="time-point"></div>
+          <div class="timer-max">
+            <div class="timer">
+              <div class="timer-hover">
+                <div class="green"></div>              
+                <div class="point"></div>
+              </div>
+            </div>
+          </div>
           <span>4:35</span>
               </div>
     </div>
@@ -197,7 +202,14 @@
       <i class="fa-solid fa-list"></i>
       <i class="fa-solid fa-display"></i>
       <i class="fa-solid fa-volume-high"></i>
-      <div class="volume-level"></div>
+      <div class="volume-max">
+        <div class="volume">
+          <div class="volume-hover">
+            <div class="green"></div>
+            <div class="point"></div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </body>
