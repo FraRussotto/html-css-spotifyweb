@@ -91,8 +91,6 @@ ul{
   font-size: 0.9rem;
 }
 
-
-
 .playlist{
   height: 60%;
   margin-top: 15px;
@@ -159,8 +157,6 @@ ul{
 }
 
 
-
-
 /* TOP BAR */
 .bar-fixed{
   position: fixed;
@@ -207,8 +203,23 @@ ul{
   text-transform: uppercase;
 }
 
-.menu ul li{
+.menu ul a{
+  position: relative;
   padding: 10px 20px;
+}
+
+.menu ul li.active-bottom{
+  color: white;
+}
+
+.border-bottom{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%,0);
+  background-color: greenyellow;
+  width: 30%;
+  height: 3px;
 }
 
 /* Container box */
