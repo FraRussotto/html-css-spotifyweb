@@ -64,11 +64,13 @@ ul{
 .logo img{
   width: 70%;
   height: auto;
+
 }
 
 .logo-small{
-  width: 30px;
   display: none;
+  width: 30px;
+  margin: 0 auto;
 }
 
 .option ul li img{
@@ -534,14 +536,29 @@ section{
     margin-top: 10px;
   }
 
-  .bottom-side{
-    text-align: center;
+  .option li{
+    padding: 5px 8px;
   }
 
-  .bottom-side div:first-child{
+  .bottom-side{
+    text-align: center;
+    padding: 0;
     margin-right: 0;
-    border-bottom: 0;
   }
+
+  .bottom-side .download,
+  .bottom-side .account{
+    border-bottom: 0;
+    font-size: 1rem;
+    margin: 10px auto;
+    padding: 0;
+  }
+  
+  .bottom-side .download i,
+  .bottom-side .account i{
+    margin: 0 auto;
+  }
+  
 }
 
 @media screen and (max-width: 1380px){
