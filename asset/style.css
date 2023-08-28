@@ -161,31 +161,33 @@ ul{
 
 
 
-/* Top bar */
-
+/* TOP BAR */
 .bar-fixed{
   position: fixed;
   z-index: 999;
   top: 0;
   justify-content: flex-end;
   align-items: center;
-  background-color: #000000;
-  opacity: 0.3;
+  background-color: rgba(0, 0, 0, 0.5);
   width: calc(100% - 225px);
   height: 80px;
 }
 
-.btn-upgrade{
-  border: solid 1px white;
+.bar-fixed a{
+  border: solid 1px grey;
   border-radius: 50px;
   padding: 10px 35px;
-  margin-right: 30px;
+  margin-right: 50px;
   text-transform: uppercase;
   font-size: 0.8rem;
 }
 
-/* main-content */
+.bar-fixed a:hover{
+  border: solid 1px white;
+  transform: scale(1.2);
+}
 
+/* MAIN CONTENT */
 .main-content{
   width: calc(100% - 225px);
   overflow: auto;
@@ -193,6 +195,7 @@ ul{
   padding-bottom: 40px;
 }
 
+/* Menù */
 .menu{
   margin-top: 100px;
 }
@@ -208,6 +211,7 @@ ul{
   padding: 10px 20px;
 }
 
+/* Container box */
 h2{
   color: white;
   margin: 40px 0 10px 0;
@@ -222,9 +226,37 @@ section{
 }
 
 .box{
+  position: relative;
   width: calc(100% / 6 - 20px);
   min-width: 160px;
   margin: 20px 20px 0 0;
+}
+
+.box-opacity{
+  display: none;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  aspect-ratio: 1;
+  top: 0;
+}
+
+.circle .box-opacity{
+  border-radius: 50%;
+}
+
+.play-icon i{
+  color: white;
+  font-size: 5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.box-image:hover .box-opacity{
+  display: block;
+  cursor: pointer;
 }
 
 .box img{
@@ -262,8 +294,7 @@ section{
 }
 
 
-/* Play-bar */
-
+/* FOOTER */
 .play-bar,
 .left{
   height: 90px;
@@ -276,7 +307,7 @@ section{
 }
 
 .left{
-  padding: 15px;
+  padding: 10px;
 }
 
 .left .song .song-image{
@@ -291,27 +322,29 @@ section{
 .info-song{
   flex-direction: column;
   justify-content: center;
+  align-items: flex-start;
 }
 
-.info-song span{
+.info-song >*{
   margin-left: 10px;
 }
 
-.info-song span:first-child{
+.info-song a:first-child{
   font-weight: bold;
   color: white;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   text-transform: capitalize;
 }
 
-.info-song a span:last-child{
+.info-song a:last-child{
   font-weight: bold;
-  color: grey;
-  font-size: 0.7rem;
+  font-size: 0.6rem;
   text-transform: capitalize;
+  line-height: 20px;
 }
 
-.info-song a:hover{
+.info-song >*:hover{
+  color: white;
   text-decoration: underline;
 }
 
@@ -319,16 +352,17 @@ section{
   color: grey;
 }
 
-.song-action i{
-  margin-left: 10px;
+.song-action i:last-child{
+  margin-left: 5px;
 }
 
 .center{
   flex-direction: column;
   justify-content: center;
-  width: 50%;
+  width: 40%;
   height: 100%;
 }
+
 .controls{
   justify-content: center;
   align-items: center;
@@ -346,7 +380,8 @@ section{
 
 .center i:hover{
   color: greenyellow;
-  transform: scale(1.2,1.2);
+  transform: scale(1.2);
+  cursor: pointer;
 }
 
 .advancement{
@@ -361,7 +396,6 @@ section{
 }
 
 .timer-max{
-  position: relative;
   width: 50%;
   margin: 15px 25px;
   height: 4px;
@@ -403,6 +437,7 @@ section{
 
 .timer-max:hover .timer .timer-hover{
   display: block;
+  cursor: pointer;
 }
 
 .right{
@@ -461,6 +496,7 @@ section{
 
 .volume-max:hover .volume .volume-hover{
   display: block;
+  cursor: pointer;
 }
 
 
